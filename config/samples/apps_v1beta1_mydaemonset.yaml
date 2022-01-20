@@ -1,0 +1,6 @@
+apiVersion: apps.gqapwd.com/v1beta1
+kind: MyDaemonset
+metadata:
+  name: mydaemonset-sample
+spec:
+  image: nginx

@@ -1,0 +1,20 @@
+domain: gqapwd.com
+layout:
+- go.kubebuilder.io/v3
+projectName: gqapwd
+repo: github/xincuni/gqapwd
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: gqapwd.com
+  group: apps
+  kind: MyDaemonset
+  path: github/xincuni/gqapwd/api/v1beta1
+  version: v1beta1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
+version: "3"
